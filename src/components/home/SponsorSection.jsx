@@ -10,9 +10,9 @@ export default function SponsorSection() {
         <img
           src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1920&h=800&fit=crop"
           alt="NASCAR Racing"
-          className="w-full h-full object-cover opacity-20"
+          className="w-full h-full object-cover opacity-70"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-white/40 to-transparent" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6">
