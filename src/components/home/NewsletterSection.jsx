@@ -15,7 +15,7 @@ export default function NewsletterSection() {
   };
 
   return (
-    <section className="bg-gradient-to-b from-black to-[#0a0a0a] py-24">
+    <section className="bg-gradient-to-b from-gray-50 to-white py-24">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -26,10 +26,10 @@ export default function NewsletterSection() {
           <span className="text-[#E10600] text-sm font-semibold uppercase tracking-widest mb-4 block">
             Stay Updated
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Subscribe to Our <span className="text-[#E10600]">Newsletter</span>
           </h2>
-          <p className="text-white/50 text-lg mb-10 max-w-xl mx-auto">
+          <p className="text-gray-600 text-lg mb-10 max-w-xl mx-auto">
             Get exclusive offers, product updates, and repair tips delivered straight to your inbox.
           </p>
 
@@ -39,13 +39,13 @@ export default function NewsletterSection() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
-              className="flex-1 bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-white placeholder-white/40 focus:outline-none focus:border-[#E10600]/50 transition-colors duration-300"
+              className="flex-1 bg-white border border-gray-300 rounded-xl px-6 py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#E10600] transition-colors duration-300"
               required
             />
             <button
               type="submit"
               disabled={submitted}
-              className="inline-flex items-center justify-center gap-2 bg-[#E10600] text-white px-8 py-4 rounded-xl font-semibold text-sm uppercase tracking-wider hover:bg-white hover:text-black transition-all duration-300 disabled:opacity-70"
+              className="inline-flex items-center justify-center gap-2 bg-[#E10600] text-white px-8 py-4 rounded-xl font-semibold text-sm uppercase tracking-wider hover:bg-[#c00500] transition-all duration-300 disabled:opacity-70"
             >
               {submitted ? (
                 <>

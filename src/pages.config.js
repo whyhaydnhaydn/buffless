@@ -50,6 +50,7 @@
 import Home from './pages/Home';
 import Shop from './pages/Shop';
 import ReturnPolicy from './pages/ReturnPolicy';
+import ProductDetail from './pages/ProductDetail';
 import __Layout from './Layout.jsx';
 
 
@@ -57,6 +58,7 @@ export const PAGES = {
     "Home": Home,
     "Shop": Shop,
     "ReturnPolicy": ReturnPolicy,
+    "ProductDetail": ProductDetail,
 }
 
 export const pagesConfig = {

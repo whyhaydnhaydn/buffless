@@ -13,12 +13,12 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-white/10">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to={createPageUrl('Home')} className="flex items-center gap-2">
-            <span className="text-2xl font-black tracking-tight text-white">
+            <span className="text-2xl font-black tracking-tight text-gray-900">
               BUFF<span className="text-[#E10600]">LESS</span>
             </span>
           </Link>
@@ -29,7 +29,7 @@ export default function Header() {
               <Link
                 key={link.page}
                 to={createPageUrl(link.page)}
-                className="text-white/80 hover:text-[#E10600] transition-colors duration-300 text-sm font-medium uppercase tracking-wider"
+                className="text-gray-700 hover:text-[#E10600] transition-colors duration-300 text-sm font-medium uppercase tracking-wider"
               >
                 {link.name}
               </Link>
@@ -38,7 +38,7 @@ export default function Header() {
 
           {/* Cart Icon */}
           <div className="hidden md:flex items-center gap-4">
-            <button className="text-white/80 hover:text-[#E10600] transition-colors duration-300">
+            <button className="text-gray-700 hover:text-[#E10600] transition-colors duration-300">
               <ShoppingCart className="w-5 h-5" />
             </button>
           </div>
@@ -46,7 +46,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden text-white"
+            className="md:hidden text-gray-900"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -60,7 +60,7 @@ export default function Header() {
                 key={link.page}
                 to={createPageUrl(link.page)}
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-white/80 hover:text-[#E10600] transition-colors duration-300 text-sm font-medium uppercase tracking-wider"
+                className="block text-gray-700 hover:text-[#E10600] transition-colors duration-300 text-sm font-medium uppercase tracking-wider"
               >
                 {link.name}
               </Link>

@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 
 export default function Layout({ children }) {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-white">
       <style>{`
         :root {
           --color-primary: #E10600;

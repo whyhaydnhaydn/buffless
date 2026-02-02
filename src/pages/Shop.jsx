@@ -31,7 +31,7 @@ export default function Shop() {
   });
 
   return (
-    <div className="bg-black min-h-screen py-12">
+    <div className="bg-white min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <motion.div
@@ -40,10 +40,10 @@ export default function Shop() {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
+          <h1 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
             Shop <span className="text-[#E10600]">Products</span>
           </h1>
-          <p className="text-white/50 text-lg">
+          <p className="text-gray-600 text-lg">
             Professional-grade repair solutions for every need
           </p>
         </motion.div>
@@ -52,18 +52,18 @@ export default function Shop() {
         <div className="flex flex-col lg:flex-row gap-4 mb-10">
           {/* Search Bar */}
           <div className="relative flex-1">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/40" />
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search products..."
-              className="w-full bg-white/5 border border-white/10 rounded-xl pl-12 pr-4 py-4 text-white placeholder-white/40 focus:outline-none focus:border-[#E10600]/50 transition-colors duration-300"
+              className="w-full bg-white border border-gray-300 rounded-xl pl-12 pr-4 py-4 text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#E10600] transition-colors duration-300"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-white/40 hover:text-white"
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-900"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -73,7 +73,7 @@ export default function Shop() {
           {/* Filter Toggle (Mobile) */}
           <button
             onClick={() => setShowFilters(!showFilters)}
-            className="lg:hidden flex items-center justify-center gap-2 bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-white"
+            className="lg:hidden flex items-center justify-center gap-2 bg-white border border-gray-300 rounded-xl px-6 py-4 text-gray-900"
           >
             <Filter className="w-4 h-4" />
             Filters
@@ -88,7 +88,7 @@ export default function Shop() {
                 className={`px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
                   selectedCategory === category.value
                     ? 'bg-[#E10600] text-white'
-                    : 'bg-white/5 text-white/70 hover:bg-white/10 hover:text-white border border-white/10'
+                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
                 }`}
               >
                 {category.label}
@@ -116,7 +116,7 @@ export default function Shop() {
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
                     selectedCategory === category.value
                       ? 'bg-[#E10600] text-white'
-                      : 'bg-white/5 text-white/70 hover:bg-white/10 border border-white/10'
+                      : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
                   }`}
                 >
                   {category.label}
@@ -145,11 +145,11 @@ export default function Shop() {
           </div>
         ) : (
           <div className="text-center py-24">
-            <div className="w-20 h-20 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Search className="w-8 h-8 text-white/30" />
+            <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Search className="w-8 h-8 text-gray-400" />
             </div>
-            <h3 className="text-white text-xl font-semibold mb-2">No products found</h3>
-            <p className="text-white/50">
+            <h3 className="text-gray-900 text-xl font-semibold mb-2">No products found</h3>
+            <p className="text-gray-500">
               {searchQuery || selectedCategory !== 'all'
                 ? 'Try adjusting your search or filters'
                 : 'Products will appear here once added'}
@@ -160,7 +160,7 @@ export default function Shop() {
         {/* Results Count */}
         {!isLoading && filteredProducts.length > 0 && (
           <div className="mt-12 text-center">
-            <p className="text-white/40 text-sm">
+            <p className="text-gray-500 text-sm">
               Showing {filteredProducts.length} {filteredProducts.length === 1 ? 'product' : 'products'}
             </p>
           </div>

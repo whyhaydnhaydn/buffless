@@ -6,13 +6,13 @@ import { ArrowRight, Shield, Clock, Award } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen bg-black flex items-center overflow-hidden">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-[#E10600]/20" />
+    <section className="relative min-h-screen bg-gradient-to-br from-gray-50 to-white flex items-center overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-gradient-to-br from-red-50/30 to-transparent" />
       
       {/* Subtle Grid Pattern */}
-      <div className="absolute inset-0 opacity-5" style={{
-        backgroundImage: 'linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)',
+      <div className="absolute inset-0 opacity-[0.02]" style={{
+        backgroundImage: 'linear-gradient(rgba(0,0,0,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.1) 1px, transparent 1px)',
         backgroundSize: '50px 50px'
       }} />
 
@@ -28,31 +28,31 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-2 mb-8"
+              className="inline-flex items-center gap-2 bg-red-50 border border-red-100 rounded-full px-4 py-2 mb-8"
             >
               <span className="w-2 h-2 bg-[#E10600] rounded-full animate-pulse" />
-              <span className="text-white/70 text-sm font-medium">Premium Quality Products</span>
+              <span className="text-gray-700 text-sm font-medium">Premium Quality Products</span>
             </motion.div>
 
-            <h1 className="text-5xl md:text-7xl font-black text-white leading-[0.95] mb-6">
+            <h1 className="text-5xl md:text-7xl font-black text-gray-900 leading-[0.95] mb-6">
               Fast Repair
               <br />
               <span className="text-[#E10600]">Guaranteed</span>
             </h1>
 
-            <p className="text-white/60 text-lg md:text-xl max-w-lg mb-10 leading-relaxed">
+            <p className="text-gray-600 text-lg md:text-xl max-w-lg mb-10 leading-relaxed">
               Buffless delivers quality repairs in record time. Trusted by thousands of professionals and enthusiasts worldwide.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-16">
               <Link
                 to={createPageUrl('Shop')}
-                className="group inline-flex items-center justify-center gap-3 bg-[#E10600] text-white px-8 py-4 rounded-xl font-semibold text-sm uppercase tracking-wider hover:bg-white hover:text-black transition-all duration-300"
+                className="group inline-flex items-center justify-center gap-3 bg-[#E10600] text-white px-8 py-4 rounded-xl font-semibold text-sm uppercase tracking-wider hover:bg-[#c00500] transition-all duration-300"
               >
                 Shop Now
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <button className="inline-flex items-center justify-center gap-3 border border-white/20 text-white px-8 py-4 rounded-xl font-semibold text-sm uppercase tracking-wider hover:border-[#E10600] hover:text-[#E10600] transition-all duration-300">
+              <button className="inline-flex items-center justify-center gap-3 border border-gray-300 text-gray-900 px-8 py-4 rounded-xl font-semibold text-sm uppercase tracking-wider hover:border-[#E10600] hover:text-[#E10600] transition-all duration-300">
                 Learn More
               </button>
             </div>
@@ -64,8 +64,8 @@ export default function HeroSection() {
                   <Shield className="w-5 h-5 text-[#E10600]" />
                 </div>
                 <div>
-                  <p className="text-white font-bold text-xl">100%</p>
-                  <p className="text-white/50 text-xs uppercase tracking-wider">Guaranteed</p>
+                  <p className="text-gray-900 font-bold text-xl">100%</p>
+                  <p className="text-gray-500 text-xs uppercase tracking-wider">Guaranteed</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -73,8 +73,8 @@ export default function HeroSection() {
                   <Clock className="w-5 h-5 text-[#E10600]" />
                 </div>
                 <div>
-                  <p className="text-white font-bold text-xl">24hr</p>
-                  <p className="text-white/50 text-xs uppercase tracking-wider">Fast Ship</p>
+                  <p className="text-gray-900 font-bold text-xl">24hr</p>
+                  <p className="text-gray-500 text-xs uppercase tracking-wider">Fast Ship</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -82,8 +82,8 @@ export default function HeroSection() {
                   <Award className="w-5 h-5 text-[#E10600]" />
                 </div>
                 <div>
-                  <p className="text-white font-bold text-xl">10K+</p>
-                  <p className="text-white/50 text-xs uppercase tracking-wider">Repairs</p>
+                  <p className="text-gray-900 font-bold text-xl">10K+</p>
+                  <p className="text-gray-500 text-xs uppercase tracking-wider">Repairs</p>
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-[#E10600]/20 blur-[100px] rounded-full" />
               
               {/* Product Image Placeholder */}
-              <div className="relative aspect-square bg-gradient-to-br from-white/10 to-transparent rounded-3xl border border-white/10 p-12 flex items-center justify-center">
+              <div className="relative aspect-square bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl border border-gray-200 p-12 flex items-center justify-center">
                 <img
                   src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop"
                   alt="Buffless Product"

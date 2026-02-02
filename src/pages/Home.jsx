@@ -15,7 +15,7 @@ export default function Home() {
   });
 
   return (
-    <div className="bg-black">
+    <div className="bg-white">
       <HeroSection />
       <TrustedBrands />
       <FeaturedProducts products={products} isLoading={isLoading} />

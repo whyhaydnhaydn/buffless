@@ -7,7 +7,7 @@ import ProductCard from '../ProductCard';
 
 export default function FeaturedProducts({ products, isLoading }) {
   return (
-    <section className="bg-black py-24">
+    <section className="bg-white py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <motion.div
@@ -19,7 +19,7 @@ export default function FeaturedProducts({ products, isLoading }) {
             <span className="text-[#E10600] text-sm font-semibold uppercase tracking-widest mb-2 block">
               Our Products
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
               Featured <span className="text-[#E10600]">Collection</span>
             </h2>
           </motion.div>
@@ -32,7 +32,7 @@ export default function FeaturedProducts({ products, isLoading }) {
           >
             <Link
               to={createPageUrl('Shop')}
-              className="group inline-flex items-center gap-2 text-white/70 hover:text-[#E10600] transition-colors duration-300 mt-4 md:mt-0"
+              className="group inline-flex items-center gap-2 text-gray-600 hover:text-[#E10600] transition-colors duration-300 mt-4 md:mt-0"
             >
               View All Products
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -44,9 +44,9 @@ export default function FeaturedProducts({ products, isLoading }) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
               <div key={i} className="animate-pulse">
-                <div className="aspect-square bg-white/5 rounded-2xl mb-4" />
-                <div className="h-4 bg-white/5 rounded w-3/4 mb-2" />
-                <div className="h-4 bg-white/5 rounded w-1/4" />
+                <div className="aspect-square bg-gray-100 rounded-2xl mb-4" />
+                <div className="h-4 bg-gray-100 rounded w-3/4 mb-2" />
+                <div className="h-4 bg-gray-100 rounded w-1/4" />
               </div>
             ))}
           </div>
@@ -58,7 +58,7 @@ export default function FeaturedProducts({ products, isLoading }) {
           </div>
         ) : (
           <div className="text-center py-16">
-            <p className="text-white/50">No featured products available yet.</p>
+            <p className="text-gray-500">No featured products available yet.</p>
           </div>
         )}
       </div>

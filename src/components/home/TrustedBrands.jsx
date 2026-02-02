@@ -12,7 +12,7 @@ export default function TrustedBrands() {
   ];
 
   return (
-    <section className="bg-black py-20 border-y border-white/5">
+    <section className="bg-gray-50 py-20 border-y border-gray-200">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,10 +21,10 @@ export default function TrustedBrands() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-white text-2xl md:text-3xl font-bold mb-2">
+          <h2 className="text-gray-900 text-2xl md:text-3xl font-bold mb-2">
             Used by <span className="text-[#E10600]">Trusted Brands</span>
           </h2>
-          <p className="text-white/50 text-sm">Industry leaders trust Buffless for their repair needs</p>
+          <p className="text-gray-600 text-sm">Industry leaders trust Buffless for their repair needs</p>
         </motion.div>
 
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
@@ -37,12 +37,12 @@ export default function TrustedBrands() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group cursor-pointer"
             >
-              <div className="w-20 h-20 md:w-24 md:h-24 bg-white/5 rounded-2xl flex items-center justify-center border border-white/10 group-hover:border-[#E10600]/50 group-hover:bg-[#E10600]/5 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-[#E10600]/10">
-                <span className="text-white/40 group-hover:text-[#E10600] font-bold text-xl md:text-2xl transition-colors duration-500">
+              <div className="w-20 h-20 md:w-24 md:h-24 bg-white rounded-2xl flex items-center justify-center border border-gray-200 group-hover:border-[#E10600] group-hover:bg-red-50 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-[#E10600]/10">
+                <span className="text-gray-400 group-hover:text-[#E10600] font-bold text-xl md:text-2xl transition-colors duration-500">
                   {brand.initial}
                 </span>
               </div>
-              <p className="text-white/30 group-hover:text-white/60 text-xs text-center mt-3 transition-colors duration-500">
+              <p className="text-gray-400 group-hover:text-gray-700 text-xs text-center mt-3 transition-colors duration-500">
                 {brand.name}
               </p>
             </motion.div>
