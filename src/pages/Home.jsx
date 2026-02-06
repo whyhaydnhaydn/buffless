@@ -14,10 +14,10 @@ import MadeInUSA from '../components/home/MadeInUSA';
 export default function Home() {
   return (
     <div className="bg-white">
-      <MadeInUSA />
       <HeroSection />
       <TrustedBrands />
       <ProductBenefits />
+      <MadeInUSA />
       <VideoSection />
       <ReviewsSection />
       <SponsorSection />
