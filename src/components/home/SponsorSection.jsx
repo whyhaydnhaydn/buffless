@@ -27,12 +27,12 @@ export default function SponsorSection() {
               Racing Partnership
             </span>
             <h2 className="text-4xl md:text-6xl font-black text-gray-900 leading-tight mb-6">
-              Official
+              Official Sponsor
               <br />
-              <span className="text-[#E10600]">Sponsor</span>
+              <span className="text-[#E10600]">Brandon Allison NASCAR Team</span>
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed mb-8 max-w-lg">
-              Proudly partnering with NASCAR to bring professional-grade repair solutions to racing teams and enthusiasts around the world.
+              Proudly sponsoring Brandon Allison's NASCAR team, bringing professional-grade repair solutions to racing teams and enthusiasts around the world.
             </p>
             <button className="group inline-flex items-center gap-3 text-gray-900 font-semibold text-sm uppercase tracking-wider hover:text-[#E10600] transition-colors duration-300">
               Learn More
