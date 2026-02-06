@@ -1,6 +1,7 @@
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
+import { motion } from 'framer-motion';
 
 import HeroSection from '../components/home/HeroSection';
 import TrustedBrands from '../components/home/TrustedBrands';
