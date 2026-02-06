@@ -9,10 +9,12 @@ import ProductBenefits from '../components/home/ProductBenefits';
 import VideoSection from '../components/home/VideoSection';
 import ReviewsSection from '../components/home/ReviewsSection';
 import NewsletterSection from '../components/home/NewsletterSection';
+import MadeInUSA from '../components/home/MadeInUSA';
 
 export default function Home() {
   return (
     <div className="bg-white">
+      <MadeInUSA />
       <HeroSection />
       <TrustedBrands />
       <ProductBenefits />
