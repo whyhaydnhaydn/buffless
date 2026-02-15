@@ -14,8 +14,7 @@ export default function Footer() {
               BUFF<span className="text-[#E10600]">LESS</span>
             </span>
             <p className="mt-4 text-white/60 text-sm leading-relaxed max-w-md">
-              Delivering premium quality repairs with speed and precision. 
-              Trusted by thousands of professionals and enthusiasts worldwide.
+              Buff-Les, LLC is an auto detailing and product manufacturing company licensed in the state of Florida and Wisconsin. Owned by its Inventor, Roosevelt Adams, and co-founder, Luz Adams. Corporate office located in Orlando Florida. Roosevelt Adams, CEO, has over 25 years' experience in the auto detailing chemicals and reconditioning industry.
             </p>
             <div className="flex gap-4 mt-6">
               <a href="#" className="text-white/60 hover:text-[#E10600] transition-colors duration-300">
@@ -70,7 +69,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/40 text-sm">
-            © {new Date().getFullYear()} Buffless. All rights reserved.
+            © 2023 BUFF LES AUTO ENTERPRISE, LLC - ALL RIGHTS RESERVED.
           </p>
           <div className="flex gap-6">
             <Link to={createPageUrl('ReturnPolicy')} className="text-white/40 hover:text-[#E10600] transition-colors duration-300 text-sm">
