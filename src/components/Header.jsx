@@ -21,7 +21,7 @@ export default function Header() {
             <img 
               src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69801f49d55594176e8ca150/cc57405d9_BuffLess-Black-_-Red-with-Tagline-PNG.png" 
               alt="BuffLess" 
-              className="h-12 w-auto"
+              className="h-20 w-auto"
             />
           </Link>
 
