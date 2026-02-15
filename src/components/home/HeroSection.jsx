@@ -52,9 +52,6 @@ export default function HeroSection() {
                 Shop Now
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <button className="inline-flex items-center justify-center gap-3 border border-gray-300 text-gray-900 px-8 py-4 rounded-xl font-semibold text-sm uppercase tracking-wider hover:border-[#E10600] hover:text-[#E10600] transition-all duration-300">
-                Learn More
-              </button>
             </div>
 
             {/* Stats */}

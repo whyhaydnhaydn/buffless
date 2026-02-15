@@ -19,7 +19,7 @@ export default function Header() {
           {/* Logo */}
           <Link to={createPageUrl('Home')} className="flex items-center gap-2">
             <img 
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69801f49d55594176e8ca150/61978a214_cropped-cropped-B-08-2.jpg" 
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69801f49d55594176e8ca150/cc57405d9_BuffLess-Black-_-Red-with-Tagline-PNG.png" 
               alt="BuffLess" 
               className="h-12 w-auto"
             />

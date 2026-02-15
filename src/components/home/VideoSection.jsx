@@ -52,22 +52,7 @@ export default function VideoSection() {
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center mt-12"
-        >
-          <a
-            href="https://BuffLesspro.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-white hover:text-[#E10600] transition-colors duration-300 text-lg font-semibold"
-          >
-            Visit BuffLesspro.com for more →
-          </a>
-        </motion.div>
+
       </div>
     </section>
   );
