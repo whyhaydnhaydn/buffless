@@ -11,6 +11,7 @@ import ProcessSection from '../components/home/ProcessSection';
 import DistributionSection from '../components/home/DistributionSection';
 import VideoSection from '../components/home/VideoSection';
 import ReviewsSection from '../components/home/ReviewsSection';
+import BlogSection from '../components/home/BlogSection';
 import NewsletterSection from '../components/home/NewsletterSection';
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
         <ReviewsSection />
         <DistributionSection />
         <SponsorSection />
+        <BlogSection />
         <NewsletterSection />
       </div>
     </div>
