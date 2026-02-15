@@ -10,9 +10,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <span className="text-2xl font-black tracking-tight text-white">
-              BUFF<span className="text-[#E10600]">LESS</span>
-            </span>
+            <img 
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69801f49d55594176e8ca150/61978a214_cropped-cropped-B-08-2.jpg" 
+              alt="BuffLess" 
+              className="h-16 w-auto mb-4"
+            />
             <p className="mt-4 text-white/60 text-sm leading-relaxed max-w-md">
               Buff-Les, LLC is an auto detailing and product manufacturing company licensed in the state of Florida and Wisconsin. Owned by its Inventor, Roosevelt Adams, and co-founder, Luz Adams. Corporate office located in Orlando Florida. Roosevelt Adams, CEO, has over 25 years' experience in the auto detailing chemicals and reconditioning industry.
             </p>

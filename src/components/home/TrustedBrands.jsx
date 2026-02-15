@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 export default function TrustedBrands() {
   const brands = [
-    { name: 'Hertz', logo: 'https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop' },
-    { name: 'Enterprise', logo: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=200&h=100&fit=crop' },
+    { name: 'Hertz', logo: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69801f49d55594176e8ca150/ae5f0a917_306-3065904_hertz-car-sales-logo.png' },
+    { name: 'Enterprise', logo: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69801f49d55594176e8ca150/988140d36_enterprise-mobility-e1d982cc.png' },
   ];
 
   return (
@@ -33,10 +33,12 @@ export default function TrustedBrands() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group cursor-pointer"
             >
-              <div className="w-32 h-20 md:w-40 md:h-24 bg-white rounded-2xl flex items-center justify-center border border-gray-200 group-hover:border-[#E10600] group-hover:bg-red-50 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-[#E10600]/10 p-4">
-                <span className="text-gray-900 group-hover:text-[#E10600] font-bold text-2xl md:text-3xl transition-colors duration-500">
-                  {brand.name}
-                </span>
+              <div className="w-40 h-24 md:w-48 md:h-28 bg-white rounded-2xl flex items-center justify-center border border-gray-200 group-hover:border-[#E10600] group-hover:bg-red-50 transition-all duration-500 group-hover:shadow-lg group-hover:shadow-[#E10600]/10 p-6">
+                <img 
+                  src={brand.logo} 
+                  alt={brand.name}
+                  className="max-w-full max-h-full object-contain"
+                />
               </div>
             </motion.div>
           ))}

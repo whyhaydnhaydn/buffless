@@ -18,9 +18,11 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to={createPageUrl('Home')} className="flex items-center gap-2">
-            <span className="text-2xl font-black tracking-tight text-gray-900">
-              BUFF<span className="text-[#E10600]">LESS</span>
-            </span>
+            <img 
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/69801f49d55594176e8ca150/61978a214_cropped-cropped-B-08-2.jpg" 
+              alt="BuffLess" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
