@@ -1,0 +1,21 @@
+{
+  "name": "PageVisit",
+  "type": "object",
+  "properties": {
+    "page": {
+      "type": "string"
+    },
+    "referrer": {
+      "type": "string"
+    },
+    "device": {
+      "type": "string",
+      "enum": [
+        "Desktop",
+        "Mobile",
+        "Tablet"
+      ]
+    }
+  },
+  "required": []
+}

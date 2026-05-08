@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
-import { LogOut, Package, Star, FileText, Plus, Trash2, Edit2, Check, X, Image } from 'lucide-react';
+import { LogOut, Package, Star, FileText, Plus, Trash2, Edit2, Check, X, Image, Megaphone, BarChart2 } from 'lucide-react';
+import BannerTab from '../components/admin/BannerTab';
+import AnalyticsTab from '../components/admin/AnalyticsTab';
 
 function AdminGuard({ children }) {
   const navigate = useNavigate();
@@ -215,6 +217,8 @@ const tabs = [
   { key: 'products', label: 'Products', icon: Package },
   { key: 'reviews', label: 'Reviews', icon: Star },
   { key: 'blog', label: 'Blog', icon: FileText },
+  { key: 'banner', label: 'Banner', icon: Megaphone },
+  { key: 'analytics', label: 'Analytics', icon: BarChart2 },
 ];
 
 export default function AdminPanel() {
@@ -263,6 +267,8 @@ export default function AdminPanel() {
           {activeTab === 'products' && <ProductsTab />}
           {activeTab === 'reviews' && <ReviewsTab />}
           {activeTab === 'blog' && <BlogTab />}
+          {activeTab === 'banner' && <BannerTab />}
+          {activeTab === 'analytics' && <AnalyticsTab />}
         </div>
       </div>
     </AdminGuard>

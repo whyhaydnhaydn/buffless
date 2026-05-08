@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTheme } from '@/lib/ThemeContext';
 
 import HeroSection from '../components/home/HeroSection';
 import TrustedBrands from '../components/home/TrustedBrands';
@@ -12,8 +13,9 @@ import ReviewsSection from '../components/home/ReviewsSection';
 import NewsletterSection from '../components/home/NewsletterSection';
 
 export default function Home() {
+  const { isDark } = useTheme();
   return (
-    <div className="bg-white relative">
+    <div className={`relative ${isDark ? 'bg-gray-950' : 'bg-white'}`}>
       {/* Floating Text */}
       <div className="fixed top-1/2 -translate-y-1/2 left-0 right-0 pointer-events-none z-0 overflow-hidden">
         <motion.div

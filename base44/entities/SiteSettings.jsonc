@@ -1,0 +1,21 @@
+{
+  "name": "SiteSettings",
+  "type": "object",
+  "properties": {
+    "banner_enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "banner_text": {
+      "type": "string"
+    },
+    "banner_bg_color": {
+      "type": "string",
+      "default": "#E10600"
+    },
+    "banner_link": {
+      "type": "string"
+    }
+  },
+  "required": []
+}

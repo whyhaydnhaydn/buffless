@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
-import { Menu, X, ShoppingCart } from 'lucide-react';
+import { Menu, X, ShoppingCart, Sun, Moon } from 'lucide-react';
+import { useTheme } from '@/lib/ThemeContext';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { isDark, toggleTheme } = useTheme();
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -22,7 +24,7 @@ export default function Header() {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 border-b shadow-sm transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'} ${isDark ? 'bg-gray-950 border-gray-800' : 'bg-white border-gray-200'}`}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -40,16 +42,19 @@ export default function Header() {
               <Link
                 key={link.page}
                 to={createPageUrl(link.page)}
-                className="text-gray-700 hover:text-[#E10600] transition-colors duration-300 text-sm font-medium uppercase tracking-wider"
+                className={`transition-colors duration-300 text-sm font-medium uppercase tracking-wider ${isDark ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-[#E10600]'}`}
               >
                 {link.name}
               </Link>
             ))}
           </nav>
 
-          {/* Cart Icon */}
-          <div className="hidden md:flex items-center gap-4">
-            <button className="text-gray-700 hover:text-[#E10600] transition-colors duration-300">
+          {/* Right controls */}
+          <div className="hidden md:flex items-center gap-3">
+            <button onClick={toggleTheme} className={`p-2 rounded-lg transition-colors duration-300 ${isDark ? 'text-gray-300 hover:text-white bg-gray-800' : 'text-gray-700 hover:text-[#E10600]'}`}>
+              {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            </button>
+            <button className={`transition-colors duration-300 ${isDark ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-[#E10600]'}`}>
               <ShoppingCart className="w-5 h-5" />
             </button>
           </div>
