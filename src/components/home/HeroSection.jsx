@@ -98,11 +98,11 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-[#E10600]/20 blur-[100px] rounded-full" />
               
               {/* Product Image Placeholder */}
-              <div className="relative aspect-square bg-black rounded-3xl border border-gray-200 flex flex-col items-center justify-center gap-3">
-                <div className="w-16 h-16 border-2 border-white/30 rounded-full flex items-center justify-center">
-                  <span className="text-white/40 text-3xl">+</span>
+              <div className="relative aspect-square bg-black rounded-3xl flex flex-col items-center justify-center gap-3">
+                <div className="w-16 h-16 border-2 border-white/20 rounded-full flex items-center justify-center">
+                  <span className="text-white/30 text-3xl">+</span>
                 </div>
-                <p className="text-white/40 text-sm font-medium uppercase tracking-widest">Add Product Image</p>
+                <p className="text-white/30 text-sm font-medium uppercase tracking-widest">Add Product Image</p>
               </div>
             </div>
           </motion.div>

@@ -52,6 +52,11 @@ export default function Footer() {
                   Return Policy
                 </Link>
               </li>
+              <li>
+                <Link to="/admin-login" className="text-white/60 hover:text-[#E10600] transition-colors duration-300 text-sm">
+                  Site Login
+                </Link>
+              </li>
             </ul>
           </div>
 
