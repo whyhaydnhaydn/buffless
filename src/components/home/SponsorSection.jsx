@@ -6,13 +6,8 @@ export default function SponsorSection() {
   return (
     <section className="relative py-32 overflow-hidden">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1920&h=800&fit=crop"
-          alt="NASCAR Racing"
-          className="w-full h-full object-cover opacity-70"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-white/40 to-transparent" />
+      <div className="absolute inset-0 bg-black flex items-center justify-center">
+        <p className="text-white/20 text-sm font-medium uppercase tracking-widest">Add Background Image</p>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6">

@@ -98,12 +98,11 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-[#E10600]/20 blur-[100px] rounded-full" />
               
               {/* Product Image Placeholder */}
-              <div className="relative aspect-square bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl border border-gray-200 p-12 flex items-center justify-center">
-                <img
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop"
-                  alt="Buffless Product"
-                  className="w-full h-full object-contain drop-shadow-2xl"
-                />
+              <div className="relative aspect-square bg-black rounded-3xl border border-gray-200 flex flex-col items-center justify-center gap-3">
+                <div className="w-16 h-16 border-2 border-white/30 rounded-full flex items-center justify-center">
+                  <span className="text-white/40 text-3xl">+</span>
+                </div>
+                <p className="text-white/40 text-sm font-medium uppercase tracking-widest">Add Product Image</p>
               </div>
             </div>
           </motion.div>
